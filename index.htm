@@ -1,0 +1,39 @@
+<!Doctype html>
+<html>
+      <head>
+            <title>Hi</title>
+            <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+            <style>
+                   body
+                   {
+                       background-size:cover;
+                   }
+            </style>
+
+
+      </head>
+      <body ng-app="we" ng-controller="mainc" background="bf.jpg">
+            <img ng-src="{{w.data.images.standard_resolution.url}}"/>
+            <br><br>
+            <script>
+
+             var shortcode=prompt("Enter Shortcode");
+             if(shortcode.length===10)
+             {
+
+                                   document.writeln("<font face=Georgia color=white>"+"Text in the Image : "+"</font>") ;
+                                   document.writeln("<br><br>");
+                                   document.writeln("<font face=Georgia color=white>" + "{{h.text_block[0].text}}" + "</font>");
+
+             }
+             else
+             {
+                 document.writeln("<font face=Georgia color=white> Invalid Shortcode </font>");
+             }
+             </script>
+            <br><br>
+            <br><br>
+            </div>
+            <script src="module.js"></script>
+      </body>
+</html>
